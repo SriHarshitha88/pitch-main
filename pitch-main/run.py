@@ -6,5 +6,5 @@ if __name__ == "__main__":
         "src.main:app",
         host=API_HOST,
         port=API_PORT,
-        reload=DEBUG
+        # reload=DEBUG # Disabled reloader for reliable code loading
     ) 

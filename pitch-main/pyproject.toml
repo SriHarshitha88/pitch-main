@@ -10,11 +10,10 @@ dependencies = [
     "uvicorn>=0.15.0",
     "python-multipart>=0.0.5",
     "aiofiles>=0.7.0",
-    "crewai>=0.1.0",
-    "langchain>=0.1.0",
-    "langchain-openai>=0.0.2",
+    "crewai==0.11.2",
+    "langchain>=0.1.10",
     "pinecone-client>=2.2.4",
-    "openai>=1.0.0",
+    "openai>=1.0",
     "python-jose[cryptography]>=3.3.0",
     "passlib[bcrypt]>=1.7.4",
     "python-dotenv>=0.19.0",
@@ -35,7 +34,7 @@ dependencies = [
     "elasticsearch>=8.0.0",
     "loguru>=0.7.0"
 ]
-requires-python = ">=3.8"
+requires-python = "==3.10.*"
 
 [project.scripts]
 pitch = "pitch.main:run"
