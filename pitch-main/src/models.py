@@ -36,6 +36,8 @@ class Analysis(Base):
     status = Column(String)  # pending, processing, completed, failed
     created_at = Column(DateTime, default=datetime.utcnow)
     completed_at = Column(DateTime, nullable=True)
+    error = Column(String, nullable=True)  # Store error messages
+    result = Column(JSON, nullable=True)  # Store raw analysis result
     deck = relationship("Deck", back_populates="analyses")
     results = relationship("AnalysisResult", back_populates="analysis", uselist=False)
 
